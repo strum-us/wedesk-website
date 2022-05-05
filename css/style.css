@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.sub {
+    /* @apply text-red-900; */
+    font-size: 10px;
+}
+.spa { 
+    @apply w-screen h-screen;
+  }

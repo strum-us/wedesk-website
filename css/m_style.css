@@ -1,0 +1,33 @@
+.s1{
+    background: no-repeat center url(../images/s1.jpg);
+    background-size: cover;
+}
+
+.s2 .icon-p .icon{
+    background: no-repeat center url(../images/s2_01.png);
+    background-size: cover;
+}
+.s2 .icon-p:nth-child(2) .icon{
+    background: url(../images/s2_02.png);
+    background-size: cover;
+}
+.s2 .icon-p:nth-child(3) .icon{
+    background: url(../images/s2_02.png);
+    background-size: cover;
+}
+
+
+#footer .address li{
+    position: relative;
+}
+
+#footer .address li:after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #838383;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-40%);
+}

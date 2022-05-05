@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- <link rel="stylesheet" href="css/tailwind.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171515846-5"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r
+            i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+            }
+            i[r].l = 1 * Date.now()
+            a = s.createElement(o)
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+        ga('create', 'UA-171515846-5', 'auto')
+        ga('send', {
+            hitType: 'pageview',
+            page: '/',
+        })
+        ga('send', 'event', 'onboarding', 'landing', 'now')
+    </script>
+
+    <script>
+        const validateEmail = (email) => {
+        return String(email)
+            .toLowerCase()
+            .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+        const formatDate = (date) => {
+            let d = new Date(date);
+            let month = (d.getMonth() + 1).toString();
+            let day = d.getDate().toString();
+            let year = d.getFullYear();
+            if (month.length < 2) {
+                month = '0' + month;
+            }
+            if (day.length < 2) {
+                day = '0' + day;
+            }
+            return [year, month, day].join('-');
+        }
+        function register() {
+            const input = document.getElementById('requestaccess')
+            const email = input.value
+            const valid = validateEmail(email)
+            if (!valid) {
+                alert('Please enter valid email address')
+            } else {
+                ga('send', 'event', 'onboarding', 'reqeustaccess', email + ' --- ' + formatDate(new Date()))
+                alert('Thank you for registering access. We will notify when we launch.')
+                input.value = ''
+            }
+        }
+    </script>
+    <title>WeDesk - Outsourcing Task Management Tool</title>
+</head>
+<body class="px-2 bg-gray-900 lg:px-0">
+    <header class="relative">
+        <div class="absolute flex flex-row items-center invisible w-full h-20 px-10 md:h-24 lg:px-40 lg:visible place-content-between">
+            <h1><a href="#"><img class="w-3/5 sm:w-3/5" src="images/logo.svg" alt=""></a></h1>
+            <nav class="flex flex-row items-center justify-center space-x-5 text-base ">
+                <!-- <a href="#">Log in</a> -->
+                <ul class="flex flex-row space-x-10 text-lg font-medium text-white">
+                    <li class="font-noto-kr"><a href="mailto:admin@wedesk.space">Contact us</a></li>
+                </ul>
+                <!-- <a href="href='./app.html' " class="inline-flex items-center px-6 py-2 mt-4 text-base bg-blue-100 border-0 rounded-lg focus:outline-none hover:bg-primary hover:text-white lg:mt-0">Sign up
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a> -->
+            </nav>
+
+        </div>
+        <div class="absolute flex flex-row items-center visible w-full h-20 px-10 md:h-24 lg:px-40 place-content-between lg:invisible">
+            <h1><a href="#"><img class="w-2/5 sm:w-3/5" src="images/logo_w.svg" alt=""></a></h1>
+
+            <nav class="flex items-center justify-center lg:ml-auto lg:hidden">
+                <div>=</div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section class="w-full py-24 lg:py-52">
+        <div class="flex flex-col items-center justify-center h-full space-y-2 lg:space-y-20">
+            <div class="flex flex-col items-center justify-center h-full text-center lg:space-y-8 lg:w-8/12" style="max-width: 900px;">
+                <h1 class="text-4xl font-extrabold text-white lg:text-6xl">
+                    Working with Freelancers made easy
+                </h1>
+                <div class="mt-3 text-xl text-gray-400 lg:text-3xl font-nomal">
+                    WeDesk aggregates task management, reviews, and approval that helps outsourcing process.
+                </div>
+            </div>
+
+            <div class="container flex flex-col items-center justify-center px-5 py-2 mx-auto text-center">
+                <div class="flex flex-col items-center justify-center w-full gap-2 lg:flex-row">
+                    <div class="w-64 text-left mr-4x relativex">
+                        <input type="text" placeholder="Email address" id="requestaccess" name="hero-field" class="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-800 border border-gray-700 rounded outline-none bg-opacity-40 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500">
+                    </div>
+                    <button type="submit" onclick="return register()" class="inline-flex px-6 py-2 text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Request Access</button>
+                </div>
+                <p class="w-full mt-2 mb-8 text-sm text-gray-500">When we launch, we will notify you.</p>
+            </div>
+    
+            <img class="rounded lg:rounded-lg lg:w-10/12 drop-shadow-2xl" src="images/desk.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- middle  -->
+    <section class="flex flex-col items-center justify-center w-full text-gray-400 body-font">
+        <div class="flex flex-col items-center justify-center h-full text-center lg:space-y-8 lg:w-2/3" >
+            <h1 class="text-4xl font-extrabold text-white">
+                Integrate Upwork and manage tasks into a single workspace
+            </h1>
+            <div class="mt-3 text-2xl text-gray-400 font-nomal">
+                When you work with WeDesk, you can easily outsource and manage the remote team. You don't need to use different tools for managing external team.
+            </div>
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/3">
+                    <div class="relative h-full px-8 pt-16 pb-24 overflow-hidden text-center bg-gray-600 bg-opacity-75 rounded-lg">
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Silo</h1>
+                        <p class="mb-3 leading-relaxed">When you initiate a task, no matter how many times it gets bounced between your collaborators, you get to review all activities and progressions.</p>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                    <div class="relative h-full px-8 pt-16 pb-24 overflow-hidden text-center bg-gray-600 bg-opacity-75 rounded-lg">
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Distraction</h1>
+                        <p class="mb-3 leading-relaxed">It is not necessary to see all the information every time you get into the tool. Using assignment, request, and approval functions, people can collaborate with others. It helps you focus on your work by hiding distractions.</p>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/3">
+                    <div class="relative h-full px-8 pt-16 pb-24 overflow-hidden text-center bg-gray-600 bg-opacity-75 rounded-lg">
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Communication</h1>
+                        <p class="mb-3 leading-relaxed">It is easy to see what works well and where the bottleneck is when you use WeDesk. Because it visualizes the work progress and communicates it effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="flex flex-col items-center w-full py-3 lg:py-12">
+        <div class="w-16 h-1 bg-gray-200">
+        </div>
+    </div>
+
+    
+    <section class="w-full px-3 lg:py-20 lg:px-0">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 lg:flex-row">
+            <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2 lg:px-12" style="max-width: 800px;">
+                <h1 class="text-4xl font-extrabold text-white">
+                    Handle tasks in a single dashboard
+                </h1>
+                <div class="mt-3 text-2xl text-gray-400 font-nomal">
+                    Keyboard friendly lightweight app that help you manage tasks well.
+                </div>
+            </div>
+    
+            <img class="rounded-lg lg:-mr-16 lg:w-9/12 drop-shadow-2xl" src="images/task-full.png" alt="">
+        </div>
+    </section>
+
+    <section class="w-full px-3 mt-6 lg:py-20 lg:px-0">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 lg:flex-row">
+            <img class="rounded-lg lg:w-7/12 lg:-ml-8 drop-shadow-2xl" src="images/assignment.png" alt="">
+            <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2 lg:px-12" style="max-width: 800px;">
+                <h1 class="text-4xl font-extrabold text-white">
+                    Assignment tracking system.
+                </h1>
+                <div class="mt-3 text-2xl text-gray-400 font-nomal">
+                    Client keep track of tasks, manage deadlines, and contracts. Freelancer can approval processes in as their comfort zone with clients.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full px-3 mt-6 lg:py-20 lg:px-0">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 lg:flex-row">
+            <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2 lg:px-12" style="max-width: 800px;">
+                <h1 class="text-4xl font-extrabold text-white">
+                    Request tasks instead of chatting
+                </h1>
+                <div class="mt-3 text-2xl text-gray-400 font-nomal">
+                    Popup and assign new task as a simple manner that help you keep track of tasks.
+                </div>
+            </div>
+            <img class="rounded-lg lg:w-7/12 lg:-mr-8 drop-shadow-2xl" src="images/request.png" alt="">
+        </div>
+    </section>
+
+    <section class="w-full px-3 mt-6 lg:py-20 lg:px-0">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 lg:flex-row">
+            <div class="flex flex-col items-center justify-center py-24 rounded-3xl lg:w-7/12 lg:-ml-8 drop-shadow-2xl"
+             style="background-image: url('images/gradient.svg'); height:auto; background-size: cover;">
+                <!-- <video class="rounded-lg lg:w-6/12 lg:-ml-8 drop-shadow-2xl" src="https://files.strum.us/videos/voiz-example.mp4" autoPlay controls loop muted></video> -->
+                <video class="w-10/12 rounded lg:-ml-8 drop-shadow-2xl" src="./images/voiz-example.mp4" autoPlay controls loop muted></video>
+            </div>
+            <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2 lg:px-12" style="max-width: 800px;">
+                <h1 class="text-4xl font-extrabold text-white">
+                    Record voice with mouse gestures
+                </h1>
+                <div class="mt-3 text-2xl text-gray-400 font-nomal">
+                    Share your thoughts vividly on the results by recording voice with mouse gestures, annotation on images and pdf files.
+                </div>
+            </div>
+            
+                <!-- <div class="rounded-lg lg:w-5/12 lg:-ml-8 drop-shadow-2xl">
+                <img class="absolute rounded-lg lg:w-6/12 lg:-ml-8 drop-shadow-2xl" src="images/assignment.png" alt="">
+            </div> -->
+        </div>
+    </section>
+
+ 
+    <div class="flex flex-col items-center w-full py-3 lg:py-12">
+        <div class="w-16 h-1 bg-gray-200">
+        </div>
+    </div>
+
+
+    <section class="w-full py-12 lg:py-20">
+        <div class="flex flex-wrap items-center justify-center h-full space-y-2 lg:space-y-8">
+            <div class="flex flex-col items-center justify-center h-full px-12 text-center lg:space-y-8 lg:w-1/2" style="max-width: 800px;">
+                <h1 class="text-4xl font-extrabold text-white">
+                    Tasks won't be completed unless you say done.
+                </h1>
+                <div class="mt-3 text-2xl text-gray-400 font-nomal">
+                    Review and track all of your freelancers' workflows.
+                </div>
+            </div>
+    
+            <img class="rounded-lg lg:w-8/12 lg:-mr-8 drop-shadow-2xl" src="images/task-detail.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="w-full py-12">
+        <div class="flex flex-col items-center justify-center h-full lg:space-y-20">
+            <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2" style="max-width: 800px;">
+                <h1 class="text-4xl font-extrabold text-white lg:text-6xl">
+                    Integrate all your Upwork freelancers.
+                </h1>
+                <div class="mt-3 text-xl text-gray-400 lg:text-3xl font-nomal">
+                    It's time to avoid distractions.
+                </div>
+            </div>
+
+            <div class="container flex flex-col items-center justify-center px-5 py-2 mx-auto text-center">
+                <div class="flex flex-col items-center justify-center w-full gap-2 lg:flex-row">
+                    <div class="w-64 text-left mr-4x relativex">
+                        <input type="text" placeholder="Email address" id="hero-field" name="hero-field" class="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-800 border border-gray-700 rounded outline-none bg-opacity-40 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500">
+                    </div>
+                    <button class="inline-flex px-6 py-2 text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Request Access</button>
+                </div>
+                <p class="w-full mt-2 mb-8 text-sm text-gray-500">When we launch, we will notify you.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-900">
+        <div class="flex flex-col items-start justify-center w-full px-10 py-12 mx-auto space-y-6 lg:py-16 place-content-between lg:w-10/12">
+            <a href="#"><img class="w-2/3" src="images/logo.svg" alt=""></a>
+
+            <div class="flex flex-col items-start justify-center w-full space-y-4 lg:space-y-0 lg:flex-row place-content-between">
+                <div class="flex flex-col space-y-1 lg:space-y-2 lg:w-2/3">
+                    <ul class="flex flex-row flex-wrap space-x-3 lg:flex-nowrap">
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="#">Strum Technology Corp</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="mailto:admin@wedesk.space">admin@wedesk.space</a></li>
+                    </ul>
+                </div>
+            
+                <div class="flex flex-col lg:space-y-2 lg:items-end lg:w-1/3">
+                    <ul class="flex flex-row space-x-3">
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="#">Contact us</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="./terms.html">Terms and condition</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="./privacy.html">Privacy policy</a></li>
+                    </ul>
+                    <div>
+                        <p class="text-sm text-gray-500 font-noto-kr">Copyright WeDesk 2022</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
