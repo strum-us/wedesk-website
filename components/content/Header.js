@@ -11,6 +11,9 @@ const Header = () => (
       <nav className="flex flex-row items-center justify-center space-x-5 text-base ">
         <ul className="flex flex-row space-x-10 text-lg font-medium text-white">
           <li className="font-noto-kr">
+            <Link href="/blog">Blog</Link>
+          </li>
+          <li className="font-noto-kr">
             <Link href="mailto:admin@wedesk.space">Contact us</Link>
           </li>
         </ul>

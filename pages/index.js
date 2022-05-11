@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Link from '@/components/Link'
 import Header from '@/components/content/Header'
 import Footer from '@/components/content/Footer'
@@ -5,7 +6,11 @@ import Footer from '@/components/content/Footer'
 export default function Home() {
   return (
     <div className="bg-gray-900 px-2 lg:px-0">
+      <Head>
+        <title>WeDesk - Outsourcing Task Management Tool</title>
+      </Head>
       <Header />
+
       <section className="w-full py-24 lg:py-52">
         <div className="flex h-full flex-col items-center justify-center space-y-2 lg:space-y-20">
           <div
@@ -34,7 +39,6 @@ export default function Home() {
               </div>
               <button
                 type="submit"
-                onClick="return register()"
                 className="inline-flex rounded border-0 bg-indigo-500 px-6 py-2 text-white hover:bg-indigo-600 focus:outline-none"
               >
                 Request Access
