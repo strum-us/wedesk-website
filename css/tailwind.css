@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.sub {
+  /* @apply text-red-900; */
+  font-size: 10px;
+}
+.spa {
+  @apply h-screen w-screen;
+}
+
+/* === */
+
 .task-list-item::before {
   @apply hidden;
 }
@@ -11,7 +21,7 @@
 }
 
 .footnotes {
-  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
 }
 
 .csl-entry {
