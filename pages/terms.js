@@ -9,35 +9,35 @@ const Terms = () => (
       <section className="body-font">
         <div className="container mx-auto flex flex-col items-center px-5 pt-24 pb-36 md:flex-row-reverse">
           <div className="flex flex-col items-center text-center md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
-            <h2 className="title-font font-poppins pt-4 pb-16 text-center text-3xl font-black sm:text-6xl">
+            <h2 className="title-font pt-4 pb-16 text-center font-poppins text-3xl font-black sm:text-6xl">
               Terms and Conditions
             </h2>
-            <p className="font-lato pb-2 text-lg leading-relaxed">
+            <p className="pb-2 font-lato text-lg leading-relaxed">
               Last updated: setember 05, 2021
             </p>
-            <p className="font-lato pb-8 text-lg leading-relaxed">
+            <p className="pb-8 font-lato text-lg leading-relaxed">
               Please read these terms and conditions carefully before using Our Service.
             </p>
 
-            <h2 className="font-poppins pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Interpretation and Definitions
             </h2>
-            <h3 className="font-poppins pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Interpretation
             </h3>
-            <p className="font-lato pb-2 text-lg leading-relaxed">
+            <p className="pb-2 font-lato text-lg leading-relaxed">
               The words of which the initial letter is capitalized have meanings defined under the
               following conditions. The following definitions shall have the same meaning regardless
               of whether they appear in singular or in plural.
             </p>
 
-            <h3 className="font-poppins pt-8 pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pt-8 pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Definitions
             </h3>
-            <p className="font-lato pb-6 text-lg leading-relaxed">
+            <p className="pb-6 font-lato text-lg leading-relaxed">
               For the purposes of these Terms and Conditions:
             </p>
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-4">
                 <strong className="pr-2 font-semibold">Affiliate</strong>means an entity that
                 controls, is controlled by or is under common control with a party, where "control"
@@ -83,29 +83,29 @@ const Terms = () => (
               </li>
             </ul>
 
-            <h2 className="font-poppins pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Acknowledgment
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               These are the Terms and Conditions governing the use of this Service and the agreement
               that operates between You and the Company. These Terms and Conditions set out the
               rights and obligations of all users regarding the use of the Service.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Your access to and use of the Service is conditioned on Your acceptance of and
               compliance with these Terms and Conditions. These Terms and Conditions apply to all
               visitors, users and others who access or use the Service.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               By accessing or using the Service You agree to be bound by these Terms and Conditions.
               If You disagree with any part of these Terms and Conditions then You may not access
               the Service.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               You represent that you are over the age of 18. The Company does not permit those under
               18 to use the Service.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Your access to and use of the Service is also conditioned on Your acceptance of and
               compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our
               policies and procedures on the collection, use and disclosure of Your personal
@@ -114,14 +114,14 @@ const Terms = () => (
               before using Our Service.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Links to Other Websites
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Our Service may contain links to third-party web sites or services that are not owned
               or controlled by the Company.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The Company has no control over, and assumes no responsibility for, the content,
               privacy policies, or practices of any third party web sites or services. You further
               acknowledge and agree that the Company shall not be responsible or liable, directly or
@@ -129,33 +129,33 @@ const Terms = () => (
               with the use of or reliance on any such content, goods or services available on or
               through any such web sites or services.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We strongly advise You to read the terms and conditions and privacy policies of any
               third-party web sites or services that You visit.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Termination
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We may terminate or suspend Your access immediately, without prior notice or
               liability, for any reason whatsoever, including without limitation if You breach these
               Terms and Conditions.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Upon termination, Your right to use the Service will cease immediately.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Limitation of Liability
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Notwithstanding any damages that You might incur, the entire liability of the Company
               and any of its suppliers under any provision of this Terms and Your exclusive remedy
               for all of the foregoing shall be limited to the amount actually paid by You through
               the Service or 100 USD if You haven't purchased anything through the Service.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               To the maximum extent permitted by applicable law, in no event shall the Company or
               its suppliers be liable for any special, incidental, indirect, or consequential
               damages whatsoever (including, but not limited to, damages for loss of profits, loss
@@ -166,17 +166,17 @@ const Terms = () => (
               supplier has been advised of the possibility of such damages and even if the remedy
               fails of its essential purpose.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Some states do not allow the exclusion of implied warranties or limitation of
               liability for incidental or consequential damages, which means that some of the above
               limitations may not apply. In these states, each party's liability will be limited to
               the greatest extent permitted by law.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               "AS IS" and "AS AVAILABLE" Disclaimer
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and
               defects without warranty of any kind. To the maximum extent permitted under applicable
               law, the Company, on its own behalf and on behalf of its Affiliates and its and their
@@ -191,7 +191,7 @@ const Terms = () => (
               without interruption, meet any performance or reliability standards or be error free
               or that any errors or defects can or will be corrected.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Without limiting the foregoing, neither the Company nor any of the company's provider
               makes any representation or warranty of any kind, express or implied: (i) as to the
               operation or availability of the Service, or the information, content, and materials
@@ -201,7 +201,7 @@ const Terms = () => (
               content, or e-mails sent from or on behalf of the Company are free of viruses,
               scripts, trojan horses, worms, malware, timebombs or other harmful components.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Some jurisdictions do not allow the exclusion of certain types of warranties or
               limitations on applicable statutory rights of a consumer, so some or all of the above
               exclusions and limitations may not apply to You. But in such a case the exclusions and
@@ -209,92 +209,92 @@ const Terms = () => (
               enforceable under applicable law.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Governing Law
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The laws of the Country, excluding its conflicts of law rules, shall govern this Terms
               and Your use of the Service. Your use of the Application may also be subject to other
               local, state, national, or international laws.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Disputes Resolution
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               If You have any concern or dispute about the Service, You agree to first try to
               resolve the dispute informally by contacting the Company.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               For European Union (EU) Users
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               If You are a European Union consumer, you will benefit from any mandatory provisions
               of the law of the country in which you are resident in.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               United States Legal Compliance
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               You represent and warrant that (i) You are not located in a country that is subject to
               the United States government embargo, or that has been designated by the United States
               government as a "terrorist supporting" country, and (ii) You are not listed on any
               United States government list of prohibited or restricted parties.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Severability and Waiver
             </h2>
-            <h3 className="font-poppins pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Severability
             </h3>
-            <p className="font-lato pb-2 text-lg leading-relaxed">
+            <p className="pb-2 font-lato text-lg leading-relaxed">
               If any provision of these Terms is held to be unenforceable or invalid, such provision
               will be changed and interpreted to accomplish the objectives of such provision to the
               greatest extent possible under applicable law and the remaining provisions will
               continue in full force and effect.
             </p>
-            <h3 className="font-poppins pb-2 text-2xl font-semibold leading-relaxed">Waiver</h3>
-            <p className="font-lato pb-2 text-lg leading-relaxed">
+            <h3 className="pb-2 font-poppins text-2xl font-semibold leading-relaxed">Waiver</h3>
+            <p className="pb-2 font-lato text-lg leading-relaxed">
               Except as provided herein, the failure to exercise a right or to require performance
               of an obligation under this Terms shall not effect a party's ability to exercise such
               right or require such performance at any time thereafter nor shall be the waiver of a
               breach constitute a waiver of any subsequent breach.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Translation Interpretation
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               These Terms and Conditions may have been translated if We have made them available to
               You on our Service. You agree that the original English text shall prevail in the case
               of a dispute.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Changes to These Terms and Conditions
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We reserve the right, at Our sole discretion, to modify or replace these Terms at any
               time. If a revision is material We will make reasonable efforts to provide at least 30
               days' notice prior to any new terms taking effect. What constitutes a material change
               will be determined at Our sole discretion.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               By continuing to access or use Our Service after those revisions become effective, You
               agree to be bound by the revised terms. If You do not agree to the new terms, in whole
               or in part, please stop using the website and the Service.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Contact Us
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               If you have any questions about these Terms and Conditions, You can contact us:
             </p>
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-4">By email: info@strum.us</li>
               <li className="pb-4">By visiting this page on our website: https://strum.us/</li>
             </ul>

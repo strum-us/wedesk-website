@@ -10,43 +10,43 @@ const Privacy = () => (
       <section className=" body-font">
         <div className="container mx-auto flex flex-col items-center px-5 pt-24 pb-36 md:flex-row-reverse">
           <div className="flex flex-col items-center text-center md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
-            <h2 className="title-font font-poppins pt-4 pb-16 text-center text-3xl font-medium font-black sm:text-6xl">
+            <h2 className="title-font pt-4 pb-16 text-center font-poppins text-3xl font-medium font-black sm:text-6xl">
               Privacy Policy
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Last updated: setember 05, 2021
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               This Privacy Policy describes Our policies and procedures on the collection, use and
               disclosure of Your information when You use the Service and tells You about Your
               privacy rights and how the law protects You.
             </p>
-            <p className="font-lato pb-8 text-lg leading-relaxed">
+            <p className="pb-8 font-lato text-lg leading-relaxed">
               We use Your Personal data to provide and improve the Service. By using the Service,
               You agree to the collection and use of information in accordance with this Privacy
               Policy. This Privacy Policy has been created with the help of the Privacy Policy
               Generator.
             </p>
 
-            <h2 className="font-poppins pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Interpretation and Definitions
             </h2>
-            <h3 className="font-poppins pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Interpretation
             </h3>
-            <p className="font-lato pb-2 text-lg leading-relaxed">
+            <p className="pb-2 font-lato text-lg leading-relaxed">
               The words of which the initial letter is capitalized have meanings defined under the
               following conditions. The following definitions shall have the same meaning regardless
               of whether they appear in singular or in plural.
             </p>
 
-            <h3 className="font-poppins pt-8 pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pt-8 pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Definitions
             </h3>
-            <p className="font-lato pb-6 text-lg leading-relaxed">
+            <p className="pb-6 font-lato text-lg leading-relaxed">
               For the purposes of this Privacy Policy:
             </p>
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-4">
                 <strong className="pr-2 font-semibold ">Account</strong>means a unique account
                 created for You to access our Services or parts of our Services.
@@ -106,21 +106,21 @@ const Privacy = () => (
               </li>
             </ul>
 
-            <h2 className="font-poppins pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Collecting and Using Your Personal Data
             </h2>
-            <h3 className="font-poppins pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Types of Data Collected
             </h3>
-            <h4 className="font-poppins pb-2 text-xl font-semibold leading-relaxed">
+            <h4 className="pb-2 font-poppins text-xl font-semibold leading-relaxed">
               Personal Data
             </h4>
-            <p className="font-lato pb-2 text-lg leading-relaxed">
+            <p className="pb-2 font-lato text-lg leading-relaxed">
               While using Our Services, We may ask You to provide Us with certain personally
               identifiable information that can be used to contact or identify You. Personally
               identifiable information may include, but is not limited to:
             </p>
-            <ul className="font-lato flex flex-col pb-2 pl-4 text-lg">
+            <ul className="flex flex-col pb-2 pl-4 font-lato text-lg">
               <li className="pb-2">Email address</li>
               <li className="pb-2">First name and last name</li>
               <li className="pb-2">Phone number</li>
@@ -129,7 +129,7 @@ const Privacy = () => (
               <li className="pb-2">Usage Data</li>
               <li className="pb-2">Credit card/payment account information</li>
             </ul>
-            <p className="font-lato pb-8 pl-12 text-lg leading-relaxed">
+            <p className="pb-8 pl-12 font-lato text-lg leading-relaxed">
               Such as payment method, credit card information, and any contact information (such as
               name and postal address) associated with payment billing information. If you are an
               end user using the Services through an account created on your behalf by an Strum
@@ -138,38 +138,38 @@ const Privacy = () => (
               the Strum customer with whom your use of the Services is associated
             </p>
 
-            <h2 className="font-poppins pb-2 text-4xl font-semibold leading-relaxed">Usage Data</h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <h2 className="pb-2 font-poppins text-4xl font-semibold leading-relaxed">Usage Data</h2>
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Usage Data is collected automatically when using the Services.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Usage Data may include information such as Your Device's Internet Protocol address
               (e.g. IP address), browser type, browser version, the pages of our Services that You
               visit, the time and date of Your visit, the time spent on those pages, unique device
               identifiers and other diagnostic data.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               When You access the Services by or through a mobile device, We may collect certain
               information automatically, including, but not limited to, the type of mobile device
               You use, Your mobile device unique ID, the IP address of Your mobile device, Your
               mobile operating system, the type of mobile Internet browser You use, unique device
               identifiers and other diagnostic data.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We may also collect information that Your browser sends whenever You visit our
               Services or when You access the Services by or through a mobile device.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Tracking Technologies and Cookies
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We use Cookies and similar tracking technologies to track and analyze activities on
               Our Services and store certain information. Tracking technologies used are beacons,
               tags, and scripts to collect and track information and to improve and analyze Our
               Services. The technologies We use may include:
             </p>
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-4">
                 <strong className="pr-2 font-semibold ">Cookies or Browser Cookies.</strong>A cookie
                 is a small file placed on Your Device. You can instruct Your browser to refuse all
@@ -199,17 +199,17 @@ const Privacy = () => (
               </li>
             </ul>
 
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your
               personal computer or mobile device when You go offline, while Session Cookies are
               deleted as soon as You close Your web browser. You can learn more about cookies here:
               All About Cookies by TermsFeed.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We use both Session and Persistent Cookies for the purposes set out below:
             </p>
 
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-2">
                 <strong className="pr-2 font-semibold ">Necessary / Essential Cookies</strong>
               </li>
@@ -246,19 +246,19 @@ const Privacy = () => (
               </li>
             </ul>
 
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               For more information about the cookies we use and your choices regarding cookies,
               please visit our Cookies Policy or the Cookies section of our Privacy Policy.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Use of Your Personal Data
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The Company may use Personal Data for the following purposes:
             </p>
 
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-2">
                 <strong className="pr-2 font-semibold ">
                   To provide and maintain our Services,
@@ -311,11 +311,11 @@ const Privacy = () => (
               </li>
             </ul>
 
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We may share Your personal information in the following situations:
             </p>
 
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-2">
                 <strong className="pr-2 font-semibold ">With Service Providers:</strong>We may share
                 Your personal information with Service Providers to monitor and analyze the use of
@@ -355,37 +355,37 @@ const Privacy = () => (
               </li>
             </ul>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Online Advertising we use
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We use Google AdWords Remarketing service. Adwords will display relevant ads tailored
               to you according to what features and how you use our Services. If you do not wish yo
               participate in our Google AdWords Remarketing service, you can opt out by visiting
               Google's Ads Preference Manger.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Retention of Your Personal Data
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The Company will retain Your Personal Data only for as long as is necessary for the
               purposes set out in this Privacy Policy. We will retain and use Your Personal Data to
               the extent necessary to comply with our legal obligations (for example, if we are
               required to retain your data to comply with applicable laws), resolve disputes, and
               enforce our legal agreements and policies.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The Company will also retain Usage Data for internal analysis purposes. Usage Data is
               generally retained for a shorter period of time, except when this data is used to
               strengthen the security or to improve the functionality of Our Services, or We are
               legally obligated to retain this data for longer time periods.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Transfer of Your Personal Data
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Your information, including Personal Data, is processed at the Company's operating
               offices and in any other places where the parties involved in the processing are
               located. It means that this information may be transferred to — and maintained on —
@@ -393,11 +393,11 @@ const Privacy = () => (
               jurisdiction where the data protection laws may differ than those from Your
               jurisdiction.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Your consent to this Privacy Policy followed by Your submission of such information
               represents Your agreement to that transfer.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The Company will take all steps reasonably necessary to ensure that Your data is
               treated securely and in accordance with this Privacy Policy and no transfer of Your
               Personal Data will take place to an organization or a country unless there are
@@ -405,40 +405,40 @@ const Privacy = () => (
               information.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Disputes Resolution
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Except as provided below, for purposes of the California Consumer Privacy Act(CCPA),
               we do not share, disclose, or sell your personal information.
             </p>
 
-            <h3 className="font-poppins pt-8 pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pt-8 pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Business Transactions
             </h3>
-            <p className="font-lato pb-6 text-lg leading-relaxed">
+            <p className="pb-6 font-lato text-lg leading-relaxed">
               If the Company is involved in a merger, acquisition or asset sale, Your Personal Data
               may be transferred. We will provide notice before Your Personal Data is transferred
               and becomes subject to a different Privacy Policy.
             </p>
 
-            <h3 className="font-poppins pt-8 pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pt-8 pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Law enforcement
             </h3>
-            <p className="font-lato pb-6 text-lg leading-relaxed">
+            <p className="pb-6 font-lato text-lg leading-relaxed">
               Under certain circumstances, the Company may be required to disclose Your Personal
               Data if required to do so by law or in response to valid requests by public
               authorities (e.g. a court or a government agency).
             </p>
 
-            <h3 className="font-poppins pt-8 pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pt-8 pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Other legal requirements
             </h3>
-            <p className="font-lato pb-6 text-lg leading-relaxed">
+            <p className="pb-6 font-lato text-lg leading-relaxed">
               The Company may disclose Your Personal Data in the good faith belief that such action
               is necessary to:
             </p>
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-2">Comply with a legal obligation</li>
               <li className="pb-2">Protect and defend the rights or property of the Company</li>
               <li className="pb-2">
@@ -450,20 +450,20 @@ const Privacy = () => (
               <li className="pb-2">Protect against legal liability</li>
             </ul>
 
-            <h3 className="font-poppins pt-8 pb-2 text-2xl font-semibold leading-relaxed">
+            <h3 className="pt-8 pb-2 font-poppins text-2xl font-semibold leading-relaxed">
               Security of Your Personal Data
             </h3>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               The security of Your Personal Data is important to Us, but remember that no method of
               transmission over the Internet, or method of electronic storage is 100% secure. While
               We strive to use commercially acceptable means to protect Your Personal Data, We
               cannot guarantee its absolute security.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Children's Privacy
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Following the Children's Online Privacy Protection Act, our Service does not collect
               any personally identifiable information from a user under the age of 13. If You are a
               parent or guardian and You are aware that Your child has provided Us with Personal
@@ -471,49 +471,49 @@ const Privacy = () => (
               anyone under the age of 13 without verification of parental consent, We take steps to
               remove that information from Our servers.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               If We need to rely on consent as a legal basis for processing Your information and
               Your country requires consent from a parent, We may require Your parent's consent
               before We collect and use that information.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Links to Other Websites
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               Our Services may contain links to other websites that are not operated by Us. If You
               click on a third party link, You will be directed to that third party's site. We
               strongly advise You to review the Privacy Policy of every site You visit.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We have no control over and assume no responsibility for the content, privacy policies
               or practices of any third party sites or services.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Changes to this Privacy Policy
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We may update Our Privacy Policy from time to time. We will notify You of any changes
               by posting the new Privacy Policy on this page.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               We will let You know via email and/or a prominent notice on Our Services, prior to the
               change becoming effective and update the "Last updated" date at the top of this
               Privacy Policy.
             </p>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               You are advised to review this Privacy Policy periodically for any changes. Changes to
               this Privacy Policy are effective when they are posted on this page.
             </p>
 
-            <h2 className="font-poppins pt-8 pb-2 text-4xl font-semibold leading-relaxed">
+            <h2 className="pt-8 pb-2 font-poppins text-4xl font-semibold leading-relaxed">
               Contact Us
             </h2>
-            <p className="font-lato pb-4 text-lg leading-relaxed">
+            <p className="pb-4 font-lato text-lg leading-relaxed">
               If you have any questions about these Terms and Conditions, You can contact us:
             </p>
-            <ul className="font-lato flex flex-col pb-8 pl-9 text-lg">
+            <ul className="flex flex-col pb-8 pl-9 font-lato text-lg">
               <li className="pb-4">By email: info@strum.us</li>
             </ul>
           </div>

@@ -10,11 +10,11 @@ const Footer = () => (
       <div className="flex w-full flex-col place-content-between items-start justify-center space-y-4 lg:flex-row lg:space-y-0">
         <div className="flex flex-col space-y-1 lg:w-2/3 lg:space-y-2">
           <ul className="flex flex-row flex-wrap space-x-3 lg:flex-nowrap">
-            <li className="font-noto-kr flex flex-row items-center space-x-3 text-sm text-gray-500">
+            <li className="flex flex-row items-center space-x-3 font-noto-kr text-sm text-gray-500">
               <a href="#">Strum Technology Corp</a>
               <samp className="h-3/5 w-0.5 bg-gray-400" />
             </li>
-            <li className="font-noto-kr flex flex-row items-center space-x-3 text-sm text-gray-500">
+            <li className="flex flex-row items-center space-x-3 font-noto-kr text-sm text-gray-500">
               <a href="mailto:admin@wedesk.space">admin@wedesk.space</a>
             </li>
           </ul>
@@ -22,15 +22,15 @@ const Footer = () => (
 
         <div className="flex flex-col lg:w-1/3 lg:items-end lg:space-y-2">
           <ul className="flex flex-row space-x-3">
-            <li className="font-noto-kr flex flex-row items-center space-x-3 text-sm text-gray-500">
+            <li className="flex flex-row items-center space-x-3 font-noto-kr text-sm text-gray-500">
               <Link href="#">Contact us</Link>
               <samp className="h-3/5 w-0.5 bg-gray-400" />
             </li>
-            <li className="font-noto-kr flex flex-row items-center space-x-3 text-sm text-gray-500">
+            <li className="flex flex-row items-center space-x-3 font-noto-kr text-sm text-gray-500">
               <Link href="/terms">Terms and condition</Link>
               <samp className="h-3/5 w-0.5 bg-gray-400" />
             </li>
-            <li className="font-noto-kr flex flex-row items-center space-x-3 text-sm text-gray-500">
+            <li className="flex flex-row items-center space-x-3 font-noto-kr text-sm text-gray-500">
               <Link href="/privacy">Privacy policy</Link>
             </li>
           </ul>
