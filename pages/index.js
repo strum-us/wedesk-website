@@ -1,9 +1,38 @@
+import { useState } from 'react'
 import Head from 'next/head'
 import Link from '@/components/Link'
 import Header from '@/components/content/Header'
 import Footer from '@/components/content/Footer'
+import { validateEmail } from '@/lib/utils'
+
+const formatDate = (date) => {
+  let d = new Date(date)
+  let month = (d.getMonth() + 1).toString()
+  let day = d.getDate().toString()
+  let year = d.getFullYear()
+  if (month.length < 2) {
+    month = '0' + month
+  }
+  if (day.length < 2) {
+    day = '0' + day
+  }
+  return [year, month, day].join('-')
+}
 
 export default function Home() {
+  const [email, setEmail] = useState('')
+  const handleChange = (e) => setEmail(e.target.value)
+  const handleClick = () => {
+    const valid = validateEmail(email)
+    if (!valid) {
+      alert('Please enter valid email address')
+    } else {
+      //ga('send', 'event', 'onboarding', 'reqeustaccess', email + ' --- ' + formatDate(new Date()))
+      alert('Thank you for registering access. We will notify when we launch.')
+      setEmail('')
+    }
+  }
+
   return (
     <div className="bg-gray-900 px-2 lg:px-0">
       <Head>
@@ -33,13 +62,16 @@ export default function Home() {
                   type="text"
                   placeholder="Email address"
                   id="requestaccess"
-                  name="hero-field"
+                  name="email1"
+                  value={email}
+                  onChange={handleChange}
                   className="w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-900"
                 />
               </div>
               <button
                 type="submit"
                 className="inline-flex rounded border-0 bg-indigo-500 px-6 py-2 text-white hover:bg-indigo-600 focus:outline-none"
+                onClick={handleClick}
               >
                 Request Access
               </button>
@@ -244,11 +276,16 @@ export default function Home() {
                   type="text"
                   placeholder="Email address"
                   id="hero-field"
-                  name="hero-field"
+                  name="email2"
+                  value={email}
+                  onChange={handleChange}
                   className="w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-900"
                 />
               </div>
-              <button className="inline-flex rounded border-0 bg-indigo-500 px-6 py-2 text-white hover:bg-indigo-600 focus:outline-none">
+              <button
+                className="inline-flex rounded border-0 bg-indigo-500 px-6 py-2 text-white hover:bg-indigo-600 focus:outline-none"
+                onClick={handleClick}
+              >
                 Request Access
               </button>
             </div>
