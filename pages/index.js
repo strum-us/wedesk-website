@@ -83,7 +83,7 @@ export default function Home() {
 
           <img
             className="rounded drop-shadow-2xl lg:w-10/12 lg:rounded-lg"
-            src="images/desk.png"
+            src="/images/desk.png"
             alt=""
           />
         </div>
@@ -157,7 +157,7 @@ export default function Home() {
 
           <img
             className="rounded-lg drop-shadow-2xl lg:-mr-16 lg:w-9/12"
-            src="images/task-full.png"
+            src="/images/task-full.png"
             alt=""
           />
         </div>
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="flex h-full flex-col items-center justify-center space-y-8 lg:flex-row">
           <img
             className="rounded-lg drop-shadow-2xl lg:-ml-8 lg:w-7/12"
-            src="images/assignment.png"
+            src="/images/assignment.png"
             alt=""
           />
           <div
@@ -198,7 +198,7 @@ export default function Home() {
           </div>
           <img
             className="rounded-lg drop-shadow-2xl lg:-mr-8 lg:w-7/12"
-            src="images/request.png"
+            src="/images/request.png"
             alt=""
           />
         </div>
@@ -209,7 +209,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center rounded-3xl bg-video-01 bg-cover py-24 drop-shadow-2xl lg:-ml-8 lg:w-7/12">
             <video
               className="w-10/12 rounded drop-shadow-2xl lg:-ml-8"
-              src="images/voiz-example.mp4"
+              src="/images/voiz-example.mp4"
               autoPlay
               controls
               loop
@@ -249,7 +249,7 @@ export default function Home() {
 
           <img
             className="rounded-lg drop-shadow-2xl lg:-mr-8 lg:w-8/12"
-            src="images/task-detail.png"
+            src="/images/task-detail.png"
             alt=""
           />
         </div>

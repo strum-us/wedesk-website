@@ -4,7 +4,7 @@ const Footer = () => (
   <footer className="bg-gray-900">
     <div className="mx-auto flex w-full flex-col place-content-between items-start justify-center space-y-6 px-10 py-12 lg:w-10/12 lg:py-16">
       <a href="#">
-        <img className="w-2/3" src="images/logo.svg" alt="" />
+        <img className="w-2/3" src="/images/logo.svg" alt="" />
       </a>
 
       <div className="flex w-full flex-col place-content-between items-start justify-center space-y-4 lg:flex-row lg:space-y-0">

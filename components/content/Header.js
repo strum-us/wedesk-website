@@ -5,7 +5,7 @@ const Header = () => (
     <div className="invisible absolute flex h-20 w-full flex-row place-content-between items-center px-10 md:h-24 lg:visible lg:px-40">
       <h1>
         <Link href="#">
-          <img className="w-3/5 sm:w-3/5" src="images/logo.svg" alt="logo image" />
+          <img className="w-3/5 sm:w-3/5" src="/images/logo.svg" alt="logo image" />
         </Link>
       </h1>
       <nav className="flex flex-row items-center justify-center space-x-5 text-base ">
@@ -22,7 +22,7 @@ const Header = () => (
     <div className="visible absolute flex h-20 w-full flex-row place-content-between items-center px-10 md:h-24 lg:invisible lg:px-40">
       <h1>
         <Link href="#">
-          <img className="w-2/5 sm:w-3/5" src="images/logo_w.svg" alt="logo image" />
+          <img className="w-2/5 sm:w-3/5" src="/images/logo_w.svg" alt="logo image" />
         </Link>
       </h1>
 

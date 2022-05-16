@@ -5,7 +5,7 @@ const HeaderLite = () => (
     <div className="flex h-20 w-full flex-row place-content-between items-center px-10 lg:px-40">
       <h1>
         <Link href="/">
-          <img className="w-3/5" src="images/logo.svg" alt="logo image" />
+          <img className="w-3/5" src="/images/logo.svg" alt="logo image" />
         </Link>
       </h1>
       <nav className="invisible flex flex-row items-center justify-center space-x-5 text-base lg:visible" />

@@ -1,10 +1,12 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
-import { getDatabase, getPage, getBlocks } from '@/lib/notion'
-import Article from '@/components/content/Article'
 import Link from 'next/link'
-import { databaseId } from './index.js'
+import { getDatabase, getPage, getBlocks } from '@/lib/notion'
 import { getSlug } from '@/lib/utils'
+import Footer from '@/components/content/Footer'
+import Header from '@/components/content/HeaderLite'
+import Article from '@/components/content/Article'
+import { databaseId } from './index.js'
 
 export default function Post({ page, blocks }) {
   if (!page || !blocks) {
@@ -18,7 +20,9 @@ export default function Post({ page, blocks }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <Article page={page} blocks={blocks} />
+      <Footer />
     </div>
   )
 }
