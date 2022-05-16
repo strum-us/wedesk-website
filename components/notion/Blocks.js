@@ -11,19 +11,19 @@ export const Paragraph = ({ value }) => (
 )
 
 export const Heading_1 = ({ value }) => (
-  <h1>
+  <h1 className="bold">
     <Text text={value.rich_text} />
   </h1>
 )
 
 export const Heading_2 = ({ value }) => (
-  <h2>
+  <h2 className="bold">
     <Text text={value.rich_text} />
   </h2>
 )
 
 export const Heading_3 = ({ value }) => (
-  <h3>
+  <h3 className="bold">
     <Text text={value.rich_text} />
   </h3>
 )
@@ -72,6 +72,11 @@ export const Image = ({ value }) => {
 export const Quote = ({ value }) => (
   <blockquote key={value.id}>{value.rich_text[0].plain_text}</blockquote>
 )
+
+export const Table = ({ value }) => {
+  console.log({ talbe: value })
+  return <blockquote key={value.id}>{value.rich_text?.[0].plain_text}</blockquote>
+}
 
 export const Divider = ({ value }) => <hr key={value.id} />
 
