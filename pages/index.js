@@ -27,7 +27,7 @@ export default function Home() {
     if (!valid) {
       alert('Please enter valid email address')
     } else {
-      //ga('send', 'event', 'onboarding', 'reqeustaccess', email + ' --- ' + formatDate(new Date()))
+      // ga('send', 'event', 'onboarding', 'reqeustaccess', email + ' --- ' + formatDate(new Date()))
       alert('Thank you for registering access. We will notify when we launch.')
       setEmail('')
     }

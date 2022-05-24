@@ -10,7 +10,10 @@
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install",
-    "out": "next build && next export"
+    "out": "next build && next export",
+    "d1": "aws s3 cp --recursive ./out s3://wedesk-web --acl public-read",
+    "d2": "aws cloudfront create-invalidation --distribution-id E37NQ1L8WZKICK --paths '/*'",
+    "sync": "yarn out && yarn d1 && yarn d2"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
