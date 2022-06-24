@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/landing/favicon.svg">
     <!-- <link rel="stylesheet" href="css/tailwind.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/m_style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171515846-5"></script>
     <script>
@@ -65,16 +66,16 @@
             }
         }
     </script>
-    <title>WeDesk - Outsourcing Task Management Tool</title>
+    <title>WeDesk - Flexible workspace for growing team</title>
 </head>
 <body class="px-2 bg-gray-900 lg:px-0">
     <header class="relative">
         <div class="absolute flex flex-row items-center invisible w-full h-20 px-10 md:h-24 lg:px-40 lg:visible place-content-between">
-            <h1><a href="#"><img class="w-3/5 sm:w-3/5" src="images/logo.svg" alt=""></a></h1>
+            <h1><a href="#"><img class="w-3/5 sm:w-3/5" src="images/landing/logo.svg" alt=""></a></h1>
             <nav class="flex flex-row items-center justify-center space-x-5 text-base ">
                 <!-- <a href="#">Log in</a> -->
                 <ul class="flex flex-row space-x-10 text-lg font-medium text-white">
-                    <li class="font-noto-kr"><a href="mailto:admin@wedesk.space">Contact us</a></li>
+                    <li class="font-noto-kr"><a href="mailto:admin@wedesk.us">Contact us</a></li>
                 </ul>
                 <!-- <a href="href='./app.html' " class="inline-flex items-center px-6 py-2 mt-4 text-base bg-blue-100 border-0 rounded-lg focus:outline-none hover:bg-primary hover:text-white lg:mt-0">Sign up
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -85,7 +86,7 @@
 
         </div>
         <div class="absolute flex flex-row items-center visible w-full h-20 px-10 md:h-24 lg:px-40 place-content-between lg:invisible">
-            <h1><a href="#"><img class="w-2/5 sm:w-3/5" src="images/logo_w.svg" alt=""></a></h1>
+            <h1><a href="#"><img class="w-2/5 sm:w-3/5" src="images/landing/logo_w.svg" alt=""></a></h1>
 
             <nav class="flex items-center justify-center lg:ml-auto lg:hidden">
                 <div>=</div>
@@ -96,27 +97,30 @@
 
 
     <section class="w-full py-24 lg:py-52">
-        <div class="flex flex-col items-center justify-center h-full space-y-2 lg:space-y-20">
+        <div class="flex flex-col items-center justify-center h-full space-y-2 lg:space-y-5">
             <div class="flex flex-col items-center justify-center h-full text-center lg:space-y-8 lg:w-8/12" style="max-width: 900px;">
-                <h1 class="text-4xl font-extrabold text-white lg:text-6xl">
-                    Working with Freelancers made easy
+                <h1 class="text-4xl font-extrabold leading-loose text-white lg:text-7xl">
+                    Handle tasks and <br>Collaboration in one place
                 </h1>
-                <div class="mt-3 text-xl text-gray-400 lg:text-3xl font-nomal">
-                    WeDesk aggregates task management, reviews, and approval that helps outsourcing process.
+                <div class="mt-3 text-xl text-gray-300 lg:text-3xl font-nomal">
+                    Manage private to-do, teams tasks, <br>multiple projects in one place
                 </div>
             </div>
-
-            <div class="container flex flex-col items-center justify-center px-5 py-2 mx-auto text-center">
+            <div class="flex flex-col items-center justify-center px-5 py-3 mx-auto text-center">
                 <div class="flex flex-col items-center justify-center w-full gap-2 lg:flex-row">
                     <div class="w-64 text-left mr-4x relativex">
                         <input type="text" placeholder="Email address" id="requestaccess" name="hero-field" class="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-800 border border-gray-700 rounded outline-none bg-opacity-40 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500">
                     </div>
-                    <button type="submit" onclick="return register()" class="inline-flex px-6 py-2 text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Request Access</button>
+                    <button type="submit" onclick="return register()" class="inline-flex px-6 py-2 text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Request Early Access</button>
                 </div>
                 <p class="w-full mt-2 mb-8 text-sm text-gray-500">When we launch, we will notify you.</p>
             </div>
     
-            <img class="rounded lg:rounded-lg lg:w-10/12 drop-shadow-2xl" src="images/desk.png" alt="">
+            <div class="overflow-hidden lg:px-4">
+                <video class="w-full rounded lg:rounded-2xl drop-shadow-4xl" style="max-width: 1400px;" src="./images/landing/wedesk-demo.mp4" controls autoPlay muted></video>
+            </div>
+
+            <!-- <img class="rounded lg:rounded-lg lg:w-10/12 drop-shadow-2xl" src="images/landing/desk.png" alt=""> -->
         </div>
     </section>
 
@@ -125,30 +129,93 @@
     <section class="flex flex-col items-center justify-center w-full text-gray-400 body-font">
         <div class="flex flex-col items-center justify-center h-full text-center lg:space-y-8 lg:w-2/3" >
             <h1 class="text-4xl font-extrabold text-white">
-                Integrate Upwork and manage tasks into a single workspace
+                Don't miss your schedule and multiple projects
             </h1>
             <div class="mt-3 text-2xl text-gray-400 font-nomal">
-                When you work with WeDesk, you can easily outsource and manage the remote team. You don't need to use different tools for managing external team.
+                Handling multiple projects and team-tasks made easy. You don't need to use different tools for managing multiple project.
             </div>
         </div>
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
+                <!-- feature item -->
                 <div class="p-4 lg:w-1/3">
-                    <div class="relative h-full px-8 pt-16 pb-24 overflow-hidden text-center bg-gray-600 bg-opacity-75 rounded-lg">
-                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Silo</h1>
-                        <p class="mb-3 leading-relaxed">When you initiate a task, no matter how many times it gets bounced between your collaborators, you get to review all activities and progressions.</p>
+                    <div class="relative flex flex-col items-center h-full px-8 pt-16 pb-24 space-y-4 overflow-hidden text-center bg-gray-700 bg-opacity-75 border-2 border-gray-500 rounded-lg">
+                        <svg width="40" height="40" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 3.75H2.25C1.85218 3.75 1.47064 3.90804 1.18934 4.18934C0.908035 4.47064 0.75 4.85218 0.75 5.25V12.75C0.75 13.1478 0.908035 13.5294 1.18934 13.8107C1.47064 14.092 1.85218 14.25 2.25 14.25H15.75C16.1478 14.25 16.5294 14.092 16.8107 13.8107C17.092 13.5294 17.25 13.1478 17.25 12.75V5.25C17.25 4.85218 17.092 4.47064 16.8107 4.18934C16.5294 3.90804 16.1478 3.75 15.75 3.75V3.75ZM9.75 5.25H11.25V6.75H9.75V5.25ZM9.75 8.25H11.25V9.75H9.75V8.25ZM6.75 5.25H8.25V6.75H6.75V5.25ZM6.75 8.25H8.25V9.75H6.75V8.25ZM3.75 5.25H5.25V6.75H3.75V5.25ZM3.75 8.25H5.25V9.75H3.75V8.25ZM12.75 12.75H5.25V11.25H12.75V12.75ZM14.25 9.75H12.75V8.25H14.25V9.75ZM14.25 6.75H12.75V5.25H14.25V6.75Z" fill="white"/>
+                        </svg>
+                            
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Keyboard-centered design</h1>
+                        <p class="mb-3 leading-relaxed">Various functions are replaced with keyboard commands, so it is possible to minimize the UI to be displayed on the screen.</p>
                     </div>
                 </div>
+                <!-- feature item -->
                 <div class="p-4 lg:w-1/3">
-                    <div class="relative h-full px-8 pt-16 pb-24 overflow-hidden text-center bg-gray-600 bg-opacity-75 rounded-lg">
-                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Distraction</h1>
-                        <p class="mb-3 leading-relaxed">It is not necessary to see all the information every time you get into the tool. Using assignment, request, and approval functions, people can collaborate with others. It helps you focus on your work by hiding distractions.</p>
+                    <div class="relative flex flex-col items-center h-full px-8 pt-16 pb-24 space-y-4 overflow-hidden text-center bg-gray-700 bg-opacity-75 border-2 border-gray-500 rounded-lg">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.1251 14.0352H24.5196L32.2579 4.25781C32.4181 4.05078 32.2735 3.75 32.0118 3.75H17.0313C16.922 3.75 16.8165 3.80859 16.7618 3.90625L6.64071 21.3867C6.51962 21.5938 6.66805 21.8555 6.91024 21.8555H13.7227L10.2306 35.8242C10.1563 36.1289 10.5235 36.3437 10.7501 36.125L33.3399 14.5703C33.5431 14.3789 33.4063 14.0352 33.1251 14.0352Z" fill="white"/>
+                        </svg>
+                                                        
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Rapid performance</h1>
+                        <p class="mb-3 leading-relaxed">No delay with fast responsive that allow you focus on work without distraction</p>
                     </div>
                 </div>
+                <!-- feature item -->
                 <div class="p-4 lg:w-1/3">
-                    <div class="relative h-full px-8 pt-16 pb-24 overflow-hidden text-center bg-gray-600 bg-opacity-75 rounded-lg">
-                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Communication</h1>
-                        <p class="mb-3 leading-relaxed">It is easy to see what works well and where the bottleneck is when you use WeDesk. Because it visualizes the work progress and communicates it effectively.</p>
+                    <div class="relative flex flex-col items-center h-full px-8 pt-16 pb-24 space-y-4 overflow-hidden text-center bg-gray-700 bg-opacity-75 border-2 border-gray-500 rounded-lg">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_9842_28689" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="2" width="34" height="36">
+                            <path d="M15 9.1665C15 6.40508 12.7614 4.1665 10 4.1665C7.23858 4.1665 5 6.40508 5 9.1665V30.8332C5 33.5946 7.23858 35.8332 10 35.8332C12.7614 35.8332 15 33.5946 15 30.8332V9.1665Z" stroke="white" stroke-width="3.33333" stroke-linejoin="round"/>
+                            <path d="M35 9.1665C35 6.40508 32.7614 4.1665 30 4.1665C27.2386 4.1665 25 6.40508 25 9.1665V30.8332C25 33.5946 27.2386 35.8332 30 35.8332C32.7614 35.8332 35 33.5946 35 30.8332V9.1665Z" stroke="white" stroke-width="3.33333" stroke-linejoin="round"/>
+                            <path d="M10 35.833C11.3261 35.833 12.5979 35.3062 13.5355 34.3685C14.4732 33.4309 15 32.1591 15 30.833C15 29.5069 14.4732 28.2352 13.5355 27.2975C12.5979 26.3598 11.3261 25.833 10 25.833C8.67392 25.833 7.40215 26.3598 6.46447 27.2975C5.52678 28.2352 5 29.5069 5 30.833C5 32.1591 5.52678 33.4309 6.46447 34.3685C7.40215 35.3062 8.67392 35.833 10 35.833V35.833ZM30 35.833C31.3261 35.833 32.5979 35.3062 33.5355 34.3685C34.4732 33.4309 35 32.1591 35 30.833C35 29.5069 34.4732 28.2352 33.5355 27.2975C32.5979 26.3598 31.3261 25.833 30 25.833C28.6739 25.833 27.4021 26.3598 26.4645 27.2975C25.5268 28.2352 25 29.5069 25 30.833C25 32.1591 25.5268 33.4309 26.4645 34.3685C27.4021 35.3062 28.6739 35.833 30 35.833Z" fill="#555555" stroke="white" stroke-width="3.33333" stroke-linejoin="round"/>
+                            <path d="M25 17.5C25 16.1739 24.4732 14.9021 23.5355 13.9645C22.5979 13.0268 21.3261 12.5 20 12.5C18.6739 12.5 17.4021 13.0268 16.4645 13.9645C15.5268 14.9021 15 16.1739 15 17.5M25 25.8333C25 24.5073 24.4732 23.2355 23.5355 22.2978C22.5979 21.3601 21.3261 20.8333 20 20.8333C18.6739 20.8333 17.4021 21.3601 16.4645 22.2978C15.5268 23.2355 15 24.5073 15 25.8333" stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </mask>
+                            <g mask="url(#mask0_9842_28689)">
+                            <path d="M0 0H40V40H0V0Z" fill="white"/>
+                            </g>
+                        </svg>
+                                                        
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Real-time vivid collaboration</h1>
+                        <p class="mb-3 leading-relaxed">A technology that simultaneously records and reproduces the mouse's motion and voice, enabling accurate delivery within a short period of time</p>
+                    </div>
+                </div>
+                <!-- feature item -->
+                <div class="p-4 lg:w-1/3">
+                    <div class="relative flex flex-col items-center h-full px-8 pt-16 pb-24 space-y-4 overflow-hidden text-center bg-gray-700 bg-opacity-75 border-2 border-gray-500 rounded-lg">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_9842_28697" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="1" width="34" height="38">
+                            <path d="M25.834 36.6667L35.0007 23.3333L18.334 10" stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 10.0002L13.3333 18.3335L20 6.66683L16.6667 3.3335L5 10.0002Z" fill="white" stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M31.6667 36.6668H10M14.1667 36.6668V33.3335" stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </mask>
+                            <g mask="url(#mask0_9842_28697)">
+                            <path d="M0 0H40V40H0V0Z" fill="white"/>
+                            </g>
+                        </svg>
+                                                        
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Focused workspace</h1>
+                        <p class="mb-3 leading-relaxed">Wedesk replace ui element to shortcuts and keyboard that helps you focus on your work by hiding distractions.</p>
+                    </div>
+                </div>
+                <!-- feature item -->
+                <div class="p-4 lg:w-1/3">
+                    <div class="relative flex flex-col items-center h-full px-8 pt-16 pb-24 space-y-4 overflow-hidden text-center bg-gray-700 bg-opacity-75 border-2 border-gray-500 rounded-lg">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 25H15V35H5V25ZM25 5H35V15H25V5ZM25 15H35V25H25V15ZM15 15H25V25H15V15ZM5 15H15V25H5V15Z" stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                                                        
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Flexible UI</h1>
+                        <p class="mb-3 leading-relaxed">Flexible workspace that help you design what you and your team want to use</p>
+                    </div>
+                </div>
+                <!-- feature item -->
+                <div class="p-4 lg:w-1/3">
+                    <div class="relative flex flex-col items-center h-full px-8 pt-16 pb-24 space-y-4 overflow-hidden text-center bg-gray-700 bg-opacity-75 border-2 border-gray-500 rounded-lg">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 16C26.628 16 32 13.314 32 10C32 6.686 26.628 4 20 4C13.372 4 8 6.686 8 10C8 13.314 13.372 16 20 16ZM29.38 16.032C30.32 15.562 31.234 14.964 32 14.24V18H28.17C27.5776 17.9998 26.9984 18.1751 26.5055 18.5036C26.0125 18.8321 25.6279 19.2992 25.4 19.846L21.234 29.846C21.044 30.302 20.9695 30.7978 21.0172 31.2894C21.0648 31.7811 21.2332 32.2534 21.5072 32.6644C21.7813 33.0754 22.1525 33.4123 22.5881 33.6453C23.0237 33.8783 23.51 34.0001 24.004 34H24.942L24.554 35.552C23.0549 35.8539 21.5292 36.004 20 36C13.372 36 8 33.314 8 30V14.24C8.766 14.964 9.68 15.562 10.62 16.032C13.124 17.284 16.444 18 20 18C23.556 18 26.876 17.284 29.38 16.032ZM26.224 32C26.3759 32 26.5258 32.0347 26.6623 32.1013C26.7988 32.1679 26.9183 32.2648 27.0118 32.3845C27.1053 32.5042 27.1703 32.6436 27.2019 32.7922C27.2335 32.9408 27.2308 33.0946 27.194 33.242L26.326 36.718C26.084 37.684 27.25 38.372 27.978 37.692L37.722 28.596C37.9418 28.3906 38.0948 28.1239 38.161 27.8305C38.2273 27.537 38.2038 27.2304 38.0936 26.9505C37.9834 26.6706 37.7916 26.4303 37.5431 26.2608C37.2946 26.0913 37.0008 26.0004 36.7 26H35.892C35.7336 25.9999 35.5776 25.9621 35.4366 25.8899C35.2957 25.8177 35.1739 25.713 35.0814 25.5845C34.9888 25.456 34.9281 25.3074 34.9042 25.1508C34.8803 24.9942 34.894 24.8343 34.944 24.684L36.066 21.316C36.116 21.1659 36.1297 21.0061 36.1059 20.8497C36.0821 20.6933 36.0216 20.5448 35.9292 20.4163C35.8369 20.2879 35.7154 20.1831 35.5747 20.1108C35.434 20.0384 35.2782 20.0004 35.12 20H28.174C27.9763 19.9999 27.7831 20.0583 27.6186 20.1679C27.4542 20.2776 27.3259 20.4335 27.25 20.616L23.084 30.616C23.0208 30.7678 22.9961 30.9329 23.012 31.0966C23.0279 31.2603 23.0839 31.4176 23.1751 31.5544C23.2663 31.6913 23.3898 31.8036 23.5347 31.8813C23.6797 31.959 23.8415 31.9998 24.006 32H26.226H26.224Z" fill="white"/>
+                        </svg>
+                                                        
+                        <h1 class="mb-3 text-xl font-medium text-white title-font sm:text-2xl">Custom database</h1>
+                        <p class="mb-3 leading-relaxed">WeDesk allow you connect external database or customize fields that fit to your needs.</p>
                     </div>
                 </div>
             </div>
@@ -173,19 +240,19 @@
                 </div>
             </div>
     
-            <img class="rounded-lg lg:-mr-16 lg:w-9/12 drop-shadow-2xl" src="images/task-full.png" alt="">
+            <img class="rounded-lg lg:-mr-16 lg:w-9/12 drop-shadow-2xl" src="images/landing/projects.png" alt="">
         </div>
     </section>
 
     <section class="w-full px-3 mt-6 lg:py-20 lg:px-0">
         <div class="flex flex-col items-center justify-center h-full space-y-8 lg:flex-row">
-            <img class="rounded-lg lg:w-7/12 lg:-ml-8 drop-shadow-2xl" src="images/assignment.png" alt="">
+            <img class="rounded-lg lg:w-7/12 lg:-ml-8 drop-shadow-2xl" src="images/landing/assignment.png" alt="">
             <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2 lg:px-12" style="max-width: 800px;">
                 <h1 class="text-4xl font-extrabold text-white">
                     Assignment tracking system.
                 </h1>
                 <div class="mt-3 text-2xl text-gray-400 font-nomal">
-                    Client keep track of tasks, manage deadlines, and contracts. Freelancer can approval processes in as their comfort zone with clients.
+                    Project managers can keep track of tasks, manage deadlines, and contracts. Team members or freelancers can do approval processes.
                 </div>
             </div>
         </div>
@@ -201,16 +268,16 @@
                     Popup and assign new task as a simple manner that help you keep track of tasks.
                 </div>
             </div>
-            <img class="rounded-lg lg:w-7/12 lg:-mr-8 drop-shadow-2xl" src="images/request.png" alt="">
+            <img class="rounded-lg lg:w-7/12 lg:-mr-8 drop-shadow-2xl" src="images/landing/request.png" alt="">
         </div>
     </section>
 
     <section class="w-full px-3 mt-6 lg:py-20 lg:px-0">
         <div class="flex flex-col items-center justify-center h-full space-y-8 lg:flex-row">
             <div class="flex flex-col items-center justify-center py-24 rounded-3xl lg:w-7/12 lg:-ml-8 drop-shadow-2xl"
-             style="background-image: url('images/gradient.svg'); height:auto; background-size: cover;">
-                <!-- <video class="rounded-lg lg:w-6/12 lg:-ml-8 drop-shadow-2xl" src="https://files.strum.us/videos/voiz-example.mp4" autoPlay controls loop muted></video> -->
-                <video class="w-10/12 rounded lg:-ml-8 drop-shadow-2xl" src="./images/voiz-example.mp4" autoPlay controls loop muted></video>
+             style="background-image: url('images/landing/gradient.svg'); height:auto; background-size: cover;">
+                <!-- <video class="rounded-lg lg:w-6/12 lg:-ml-8 drop-shadow-2xl" src="https://files.wedesk.us/videos/voiz-example.mp4" autoPlay controls loop muted></video> -->
+                <video class="w-10/12 rounded lg:-ml-8 drop-shadow-2xl" src="./images/landing/voiz-example.mp4" autoPlay controls loop muted></video>
             </div>
             <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2 lg:px-12" style="max-width: 800px;">
                 <h1 class="text-4xl font-extrabold text-white">
@@ -222,7 +289,7 @@
             </div>
             
                 <!-- <div class="rounded-lg lg:w-5/12 lg:-ml-8 drop-shadow-2xl">
-                <img class="absolute rounded-lg lg:w-6/12 lg:-ml-8 drop-shadow-2xl" src="images/assignment.png" alt="">
+                <img class="absolute rounded-lg lg:w-6/12 lg:-ml-8 drop-shadow-2xl" src="images/landing/assignment.png" alt="">
             </div> -->
         </div>
     </section>
@@ -241,11 +308,11 @@
                     Tasks won't be completed unless you say done.
                 </h1>
                 <div class="mt-3 text-2xl text-gray-400 font-nomal">
-                    Review and track all of your freelancers' workflows.
+                    Review and keep track of your workflows.
                 </div>
             </div>
     
-            <img class="rounded-lg lg:w-8/12 lg:-mr-8 drop-shadow-2xl" src="images/task-detail.png" alt="">
+            <img class="rounded-lg lg:w-8/12 lg:-mr-8 drop-shadow-2xl" src="images/landing/task-detail.png" alt="">
         </div>
     </section>
 
@@ -254,7 +321,7 @@
         <div class="flex flex-col items-center justify-center h-full lg:space-y-20">
             <div class="flex flex-col items-center justify-center h-full space-y-8 text-center lg:w-1/2" style="max-width: 800px;">
                 <h1 class="text-4xl font-extrabold text-white lg:text-6xl">
-                    Integrate all your Upwork freelancers.
+                    Integrate all your workflows.
                 </h1>
                 <div class="mt-3 text-xl text-gray-400 lg:text-3xl font-nomal">
                     It's time to avoid distractions.
@@ -276,13 +343,13 @@
 
     <footer class="bg-gray-900">
         <div class="flex flex-col items-start justify-center w-full px-10 py-12 mx-auto space-y-6 lg:py-16 place-content-between lg:w-10/12">
-            <a href="#"><img class="w-2/3" src="images/logo.svg" alt=""></a>
+            <a href="#"><img class="w-2/3" src="images/landing/logo.svg" alt=""></a>
 
             <div class="flex flex-col items-start justify-center w-full space-y-4 lg:space-y-0 lg:flex-row place-content-between">
                 <div class="flex flex-col space-y-1 lg:space-y-2 lg:w-2/3">
                     <ul class="flex flex-row flex-wrap space-x-3 lg:flex-nowrap">
                         <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="#">Strum Technology Corp</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
-                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="mailto:admin@wedesk.space">admin@wedesk.space</a></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="mailto:admin@wedesk.us">admin@wedesk.us</a></li>
                     </ul>
                 </div>
             
@@ -293,7 +360,7 @@
                         <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="./privacy.html">Privacy policy</a></li>
                     </ul>
                     <div>
-                        <p class="text-sm text-gray-500 font-noto-kr">Copyright WeDesk 2022</p>
+                        <p class="text-sm text-gray-500 font-noto-kr">Copyright wedesk.us 2022</p>
                     </div>
                 </div>
 

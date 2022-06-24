@@ -3,3 +3,7 @@ dist
 aws
 .vscode
 yarn.lock
+out
+.next
+.husky
+firebase-debug.log
