@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="images/landing/favicon.svg">
+    <!-- <link rel="stylesheet" href="css/tailwind.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/m_style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171515846-5"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r
+            i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+            }
+            i[r].l = 1 * Date.now()
+            a = s.createElement(o)
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+        ga('create', 'UA-171515846-5', 'auto')
+        ga('send', {
+            hitType: 'pageview',
+            page: '/about',
+        })
+    </script>
+
+    <script>
+        const validateEmail = (email) => {
+        return String(email)
+            .toLowerCase()
+            .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+        const formatDate = (date) => {
+            let d = new Date(date);
+            let month = (d.getMonth() + 1).toString();
+            let day = d.getDate().toString();
+            let year = d.getFullYear();
+            if (month.length < 2) {
+                month = '0' + month;
+            }
+            if (day.length < 2) {
+                day = '0' + day;
+            }
+            return [year, month, day].join('-');
+        }
+        function register() {
+            const input = document.getElementById('requestaccess')
+            const email = input.value
+            const valid = validateEmail(email)
+            if (!valid) {
+                alert('Please enter valid email address')
+            } else {
+                ga('send', 'event', 'onboarding', 'reqeustaccess', email + ' --- ' + formatDate(new Date()))
+                alert('Thank you for registering access. We will notify when we launch.')
+                input.value = ''
+            }
+        }
+    </script>
+    <title>WeDesk - Flexible workspace for growing team</title>
+</head>
+<body class="px-2 bg-gray-900 lg:px-0">
+    <header class="relative">
+        <div class="absolute flex flex-row items-center invisible w-full h-20 px-10 md:h-24 lg:px-40 lg:visible place-content-between">
+            <h1><a href="#"><img class="w-3/5 sm:w-3/5" src="images/landing/logo.svg" alt=""></a></h1>
+            <nav class="flex flex-row items-center justify-center space-x-5 text-base ">
+                <!-- <a href="#">Log in</a> -->
+                <ul class="flex flex-row space-x-10 text-lg font-medium text-white">
+                    <li class="font-noto-kr"><a href="mailto:admin@wedesk.us">Contact us</a></li>
+                </ul>
+                <!-- <a href="href='./app.html' " class="inline-flex items-center px-6 py-2 mt-4 text-base bg-blue-100 border-0 rounded-lg focus:outline-none hover:bg-primary hover:text-white lg:mt-0">Sign up
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a> -->
+            </nav>
+
+        </div>
+        <div class="absolute flex flex-row items-center visible w-full h-20 px-10 md:h-24 lg:px-40 place-content-between lg:invisible">
+            <h1><a href="#"><img class="w-2/5 sm:w-3/5" src="images/landing/logo_w.svg" alt=""></a></h1>
+
+            <nav class="flex items-center justify-center lg:ml-auto lg:hidden">
+                <div>=</div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-gray-200 body-font">
+        <div class="container flex flex-col items-center px-5 py-24 mx-auto" style="max-width: 1000px;">
+          <div class="flex flex-col w-full mb-20 text-center">
+            <h1 class="mb-4 text-2xl font-medium text-gray-300 sm:text-3xl title-font">Our Team</h1>
+            <p class="mx-auto text-base leading-relaxed lg:w-2/3">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="flex flex-wrap">
+                <div class="w-full p-2 lg:w-96 md:w-1/2">
+                <div class="flex items-center h-full p-4 border border-gray-600 rounded-lg">
+                    <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 bg-gray-100 rounded-full" src="https://dummyimage.com/80x80">
+                    <div class="flex-grow">
+                    <h2 class="font-medium text-gray-300 title-font">Isaac Lee</h2>
+                    <p class="text-gray-500">Founder & CEO</p>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full p-2 lg:w-96 md:w-1/2">
+                <div class="flex items-center h-full p-4 border border-gray-600 rounded-lg">
+                    <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 bg-gray-100 rounded-full" src="https://dummyimage.com/84x84">
+                    <div class="flex-grow">
+                    <h2 class="font-medium text-gray-300 title-font">Yoon Kim</h2>
+                    <p class="text-gray-500">Software Engineer</p>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full p-2 lg:w-96 md:w-1/2">
+                <div class="flex items-center h-full p-4 border border-gray-600 rounded-lg">
+                    <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 bg-gray-100 rounded-full" src="https://dummyimage.com/88x88">
+                    <div class="flex-grow">
+                    <h2 class="font-medium text-gray-300 title-font">Soojeong Han</h2>
+                    <p class="text-gray-500">Software Engineer</p>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full p-2 lg:w-96 md:w-1/2">
+                <div class="flex items-center h-full p-4 border border-gray-600 rounded-lg">
+                    <img alt="team" class="flex-shrink-0 object-cover object-center w-16 h-16 mr-4 bg-gray-100 rounded-full" src="https://dummyimage.com/90x90">
+                    <div class="flex-grow">
+                    <h2 class="font-medium text-gray-300 title-font">Jiwoong</h2>
+                    <p class="text-gray-500">Software Engineer</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    <footer class="bg-gray-900">
+        <div class="flex flex-col items-start justify-center w-full px-10 py-12 mx-auto space-y-6 lg:py-16 place-content-between lg:w-10/12">
+            <a href="#"><img class="w-2/3" src="images/landing/logo.svg" alt=""></a>
+
+            <div class="flex flex-col items-start justify-center w-full space-y-4 lg:space-y-0 lg:flex-row place-content-between">
+                <div class="flex flex-col space-y-1 lg:space-y-2 lg:w-2/3">
+                    <ul class="flex flex-row flex-wrap space-x-3 lg:flex-nowrap">
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="#">Strum Technology Corp</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="mailto:admin@wedesk.us">admin@wedesk.us</a></li>
+                    </ul>
+                </div>
+            
+                <div class="flex flex-col lg:space-y-2 lg:items-end lg:w-1/3">
+                    <ul class="flex flex-row space-x-3">
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="#">Contact us</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="./terms.html">Terms and condition</a><samp class="w-0.5 h-3/5 bg-gray-400"></samp></li>
+                        <li class="flex flex-row items-center space-x-3 text-sm text-gray-500 font-noto-kr"><a href="./privacy.html">Privacy policy</a></li>
+                    </ul>
+                    <div>
+                        <p class="text-sm text-gray-500 font-noto-kr">Copyright wedesk.us 2022</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
